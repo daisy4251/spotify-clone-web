@@ -18,8 +18,8 @@
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
 - 초기 구현은
-  [Replit](https://d01c67be-98c7-416e-ab23-dce592f099ce-00-2souyyah294vt.sisko.repl.co/) 또는
-  [Notion](https://teal-catcher-309.notion.site/230110-230111-Google-bede8e5927f8483d873a2f16147f378a?pvs=74) 참조
+  [Replit](https://832a1242-7671-4884-b440-953d3ffddc3d-00-zesjd9c8otxa.pike.repl.co/) 또는
+  [Notion](https://teal-catcher-309.notion.site/230113-230114-Spotify-1a9420e4cd39472085d2de9721e8877b) 참조
 
 ```css
 @media (max-width: 768px) {
