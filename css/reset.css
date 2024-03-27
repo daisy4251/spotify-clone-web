@@ -36,12 +36,3 @@ caption,
 legend {
 	display: none;
 }
-
-fieldset,
-img {
-	border: none;
-}
-
-textarea {
-	resize: none;
-}

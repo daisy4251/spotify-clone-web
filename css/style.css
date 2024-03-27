@@ -1,7 +1,7 @@
 body {
 	width: 100%;
-	height: 1000px;
-	margin: 0;
+	/* height: auto; */
+	margin: 0 auto;
 
 	color: #fff;
 	font-size: 16px;
@@ -11,18 +11,18 @@ body {
 }
 
 /* 공통 */
-.inner {
-	width: 95%;
-	margin: 0 auto;
-	/* position: relative; */
-}
-
 a {
 	color: #fff;
 }
 
 a:hover {
 	color: #1ed760;
+}
+
+.inner {
+	width: 95%;
+	margin: 0 auto;
+	/* position: relative; */
 }
 
 /* header */
@@ -142,10 +142,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	/* height: 968px; */
 	padding: 5%;
-
 	background-color: #2941ab;
 	background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
 	background-size: 175%;
@@ -187,10 +184,11 @@ main .text {
 
 main .button-area {
 	text-align: center;
+	margin-bottom: 5%;
 }
 
 main .button-area button {
-	padding: 14px 32px;
+	padding: 1.2em 1.8em;
 
 	color: #2941ab;
 	font-size: inherit;
@@ -210,7 +208,7 @@ main .button-area button:hover {
 
 /* footer */
 footer {
-	padding: 50px 0;
+	padding: 5% 0;
 }
 
 footer .section-menu {
@@ -384,20 +382,41 @@ footer .section-privacy p {
 
 	footer .section-menu .menu-area {
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		gap: 1.2em;
+		gap: 0.8em;
+	}
+
+	footer .section-menu .menu-area .flex-column {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	footer .section-menu .menu-area .flex-column li h3 {
 		color: #fff;
 		cursor: pointer;
 	}
+
+	footer .section-menu .menu-area .flex-column li h3::after {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		line-height: 0.8em;
+		border-radius: 100%;
+		text-align: center;
+		content: '+';
+		margin-left: 0.5em;
+		border: 1px solid #fff;
+		padding: 0.5em;
+	}
+
 	footer .section-menu .menu-area .flex-column li h3:hover {
 		color: #1ed760;
 	}
 
-	footer .section-menu .menu-area .flex-column li a {
-		display: none;
+	footer .section-menu .menu-area .flex-column li:hover h3::after {
+		border-color: #1ed760;
 	}
 
 	footer .section-privacy .privacy-area {
@@ -407,7 +426,23 @@ footer .section-privacy p {
 
 @media (max-width: 576px) {
 	main .content h2 {
-		font-size: 2.5em;
+		font-size: 4em;
+	}
+
+	footer .section-menu .menu-area .flex-column li h3 {
+		color: #fff;
+		cursor: pointer;
+		font-size: 1em;
+	}
+
+	footer .section-menu .menu-area .flex-column li h3::after {
+		width: 10px;
+		height: 10px;
+		line-height: 0.8em;
+	}
+
+	footer .section-menu .menu-area .flex-column li a {
+		display: none;
 	}
 
 	footer .section-usa {
@@ -419,15 +454,36 @@ footer .section-privacy p {
 	}
 
 	footer .section-privacy .privacy-area {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		gap: 20px;
+		display: none;
+	}
+
+	footer .section-privacy p {
+		font-size: 0.9em;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 472px) {
 	main .content h2 {
-		font-size: 2em;
+		font-size: 3em;
+	}
+
+	main .text {
+		font-size: 1em;
+	}
+
+	footer .section-menu .menu-area .flex-column li h3 {
+		color: #fff;
+		cursor: pointer;
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 356px) {
+	main .content h2 {
+		font-size: 2.5em;
+	}
+
+	main .button-area button {
+		font-size: 0.8em;
 	}
 }
