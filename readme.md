@@ -13,7 +13,7 @@
 ## 3. 완료 모습
 
 ![완료 초기](./image/image-2.png)
-![모바일 구현](https://github.com/daisy4251/spotify-clone-web/assets/105619361/dd2585e9-eecd-4a07-b6cc-d3261f6b06f5)
+![모바일 구현](https://github.com/daisy4251/spotify-clone-web/assets/165018586/5535bd82-5285-4686-8c53-49beca69715f)
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
