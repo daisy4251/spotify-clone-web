@@ -1,5 +1,7 @@
 # 230113-230114 Spotify 클론 코딩
 
+![Spotify 클론 코딩 페이지](https://bejewelled-sprinkles-a7620b.netlify.app/)
+
 ## 1. CSS 구조 파악
 
 ![구조 파악](./image/image.png)
