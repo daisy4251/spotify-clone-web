@@ -4,15 +4,15 @@
 
 ## 1. CSS 구조 파악
 
-![구조 파악](image.png)
+![구조 파악](./image/image.png)
 
 ## 2. CSS 구조 정하기
 
-![구조 정하기](image-1.png)
+![구조 정하기](./image/image-1.png)
 
 ## 3. 완료 모습
 
-![완료 초기](image-2.png)
+![완료 초기](./image/image-2.png)
 ![모바일 구현](https://github.com/daisy4251/spotify-clone-web/assets/105619361/dd2585e9-eecd-4a07-b6cc-d3261f6b06f5)
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
