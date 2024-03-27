@@ -1,7 +1,5 @@
 # 230110-230111 Google 클론 코딩
 
----
-
 ## 1. CSS 구조 파악
 
 ![구조 파악](./image/image.png)
@@ -14,6 +12,8 @@
 
 ![완료 초기](./image/image-2.png)
 ![모바일구현](https://github.com/daisy4251/spotify-clone-web/assets/165018586/81ca617c-a81a-4088-bd26-12615c6d3a18)
+
+---
 
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
