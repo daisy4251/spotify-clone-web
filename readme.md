@@ -17,6 +17,90 @@
 
 ---
 
+### sidebar mobile처리
+
+- input, label을 이용한 input:checked lable transition 처리
+- 근접 요소 선택자 '+' 사용
+
+```css
+/* input */
+header #mobile-btn {
+	display: none;
+}
+
+/* input 옆에 label */
+header #mobile-btn + .mobile-icon {
+	display: none;
+	margin: 30px;
+	width: 24px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+
+header #mobile-btn + .mobile-icon span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	border-radius: 24px;
+	background: #fff;
+	transition: all 0.35s;
+}
+
+header #mobile-btn + .mobile-icon span:nth-child(1) {
+	top: 0;
+}
+
+header #mobile-btn + .mobile-icon span:nth-child(2) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+header #mobile-btn + .mobile-icon span:nth-child(3) {
+	bottom: 0;
+}
+
+/* input:checked 상태일 때 */
+
+header #mobile-btn:checked + .mobile-icon span:nth-child(1) {
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+header #mobile-btn:checked + .mobile-icon span:nth-child(2) {
+	opacity: 0;
+}
+header #mobile-btn:checked + .mobile-icon span:nth-child(3) {
+	bottom: 50%;
+	transform: translateY(50%) rotate(-45deg);
+}
+
+/* div-모바일 메뉴 */
+
+header .side-bar {
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	left: -9999px;
+	padding: 1.2em;
+	background-color: #000;
+	transition: all 0.35s;
+}
+
+/* input:checked 상태일 때 */
+
+header #mobile-btn:checked + .mobile-icon + .side-bar {
+	left: 0;
+}
+
+header .side-bar li {
+	line-height: 3em;
+}
+```
+
 ### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
 
 - 초기 구현은

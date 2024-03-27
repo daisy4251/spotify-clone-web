@@ -1,6 +1,5 @@
 body {
 	width: 100%;
-	/* height: auto; */
 	margin: 0 auto;
 
 	color: #fff;
@@ -22,7 +21,6 @@ a:hover {
 .inner {
 	width: 95%;
 	margin: 0 auto;
-	/* position: relative; */
 }
 
 /* header */
@@ -115,7 +113,6 @@ header #mobile-btn:checked + .mobile-icon span:nth-child(2) {
 header #mobile-btn:checked + .mobile-icon span:nth-child(3) {
 	bottom: 50%;
 	transform: translateY(50%) rotate(-45deg);
-	/* transform: translateY(50%) rotate(-45deg); */
 }
 
 header .side-bar {
@@ -150,10 +147,7 @@ main {
 }
 
 main .content {
-	/* width: 95%; */
 	margin: 0 auto;
-	/* border: 1px solid #000;
-	box-sizing: border-box; */
 }
 
 main .content h2 {
@@ -377,7 +371,6 @@ footer .section-privacy p {
 	footer .section-menu {
 		flex-direction: column;
 		align-items: center;
-		/* justify-content: center; */
 	}
 
 	footer .section-menu .menu-area {
