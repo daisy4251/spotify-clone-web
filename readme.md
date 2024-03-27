@@ -101,11 +101,81 @@ header .side-bar li {
 }
 ```
 
-### 미디어 쿼리를 이용한 모바일 사이즈 시 깨짐 수정
+### 미디어 쿼리를 이용한 큰 화면 구현 시 깨짐 수정
+
+- min-width: 2048px
+
+```css
+@media (min-width: 2048px) {
+	body {
+		font-size: 1.2em;
+	}
+
+	.inner {
+		width: 80%;
+	}
+
+	main .content {
+		width: 95%;
+	}
+
+	main .content h2 {
+		font-size: 10em;
+	}
+	main .text p {
+		font-size: 1.5em;
+	}
+}
+```
+
+### 미디어 쿼리를 이용한 태블릿 및 노트북 화면 구현 시 깨짐 수정
+
+- max-width: 1200px
+
+```css
+@media (max-width: 1200px) {
+	main .content h2 {
+		font-size: 8em;
+	}
+}
+```
+
+- max-width: 992px
+
+```css
+@media (max-width: 992px) {
+	main .content h2 {
+		font-size: 6em;
+	}
+
+	footer .section-menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .section-menu .menu-area {
+		margin-bottom: 50px;
+	}
+
+	footer .section-privacy {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	footer .section-privacy .privacy-area {
+		text-align: center;
+	}
+}
+```
+
+### 미디어 쿼리를 이용한 모바일 구현 시 깨짐 수정
 
 - 초기 구현은
   [Replit](https://832a1242-7671-4884-b440-953d3ffddc3d-00-zesjd9c8otxa.pike.repl.co/) 또는
   [Notion](https://teal-catcher-309.notion.site/230113-230114-Spotify-1a9420e4cd39472085d2de9721e8877b) 참조
+
+- max-width: 768px
 
 ```css
 @media (max-width: 768px) {
@@ -175,7 +245,11 @@ header .side-bar li {
 		margin-bottom: 2em;
 	}
 }
+```
 
+- max-width: 576px
+
+```css
 @media (max-width: 576px) {
 	main .content h2 {
 		font-size: 4em;
@@ -213,7 +287,11 @@ header .side-bar li {
 		font-size: 0.9em;
 	}
 }
+```
 
+- max-width: 472px
+
+```css
 @media (max-width: 472px) {
 	main .content h2 {
 		font-size: 3em;
@@ -241,27 +319,19 @@ header .side-bar li {
 }
 ```
 
-### Google Fonts
+### Spotify Fonts
 
-가장 유사한 웹 폰트로 대체
+- Spotify Fonts(spotify-circular) 사용
 
-```html
-<!-- FONT -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&display=swap"
-	rel="stylesheet"
-/>
-<link
-	rel="stylesheet"
-	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
+```css
+body {
+	font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
 ```
 
 ### Favicon
 
-스포티파이 제공 favicon 사용
+- 스포티파이 제공 favicon 사용
 
 ```html
 <!-- FAVICON -->
@@ -270,4 +340,4 @@ header .side-bar li {
 
 ### Icon
 
-무난한 [Font Awsome](https://fontawesome.com/) 사용
+- 무난한 [Font Awsome](https://fontawesome.com/) 사용
